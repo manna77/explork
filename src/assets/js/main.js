@@ -76,9 +76,9 @@ $(".scrollToTop").on("click", function () {
 	return false;
 });
 
-$(".brand-slider").slick({
+$(".feature-slider").slick({
 	fade: false,
-	slidesToShow: 6,
+	slidesToShow: 3,
 	slidesToScroll: 1,
 	infinite: true,
 	autoplay: true,
@@ -92,25 +92,25 @@ $(".brand-slider").slick({
 		{
 			breakpoint: 1199,
 			settings: {
-				slidesToShow: 5,
+				slidesToShow: 3,
 			},
 		},
 		{
-			breakpoint: 992,
+			breakpoint: 991,
 			settings: {
-				slidesToShow: 5,
+				slidesToShow: 2,
 			},
 		},
 		{
 			breakpoint: 767,
 			settings: {
-				slidesToShow: 4,
+				slidesToShow: 2,
 			},
 		},
 		{
 			breakpoint: 575,
 			settings: {
-				slidesToShow: 3,
+				slidesToShow: 1,
 			},
 		},
 	],

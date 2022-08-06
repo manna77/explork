@@ -1,8 +1,266 @@
-// Book Section Starts Here
-.book-section {
-    overflow: hidden;
+// Section Header Starts Here
+.section-header {
+	@include breakpoint(xxl) {
+		margin-bottom: 70px;
+	}
+	@include breakpoint(max-xxl) {
+		margin-bottom: 55px;
+	}
+	@include breakpoint(max-md) {
+		margin-bottom: 45px;
+	}
+	@include breakpoint(max-sm) {
+		margin-bottom: 35px;
+	}
+	&__title {
+		margin-bottom: 20px;
+		@include breakpoint(max-xl) {
+			margin-bottom: 15px;
+		}
+		@include breakpoint(max-sm) {
+			margin-bottom: 12px;
+		}
+	}
 }
+// Section Header Ends Here
+
+// Book Section Starts Here
 .book-thumb {
-    
+	@include breakpoint(lg) {
+		margin-top: -150px;
+	}
 }
 // Book Section Ends Here
+
+// Feature Section Starts Here
+.feature-slider {
+	.single-slide {
+		padding-inline: 25px;
+		@include breakpoint(max-xl) {
+			padding-inline: 15px;
+		}
+		@include breakpoint(max-md) {
+			padding-inline: 10px;
+		}
+		@include breakpoint(max-sm) {
+			padding-inline: 0px;
+		}
+	}
+}
+.feature-item {
+	background-color: hsl(var(--light-500));
+	border-radius: 90px;
+	@include breakpoint(max-xxl) {
+		border-radius: 70px;
+	}
+	@include breakpoint(max-xl) {
+		border-radius: 50px;
+	}
+	&__thumb {
+		width: 100%;
+		aspect-ratio: 1;
+		background-color: var(--theme-one);
+		@extend %flex-center;
+		border-radius: 90px;
+		padding: 55px;
+		@include breakpoint(max-xxl) {
+			border-radius: 70px;
+		}
+		@include breakpoint(max-xl) {
+			border-radius: 50px;
+		}
+		img {
+			max-width: 100%;
+		}
+	}
+	&__content {
+		padding: 50px;
+		text-align: center;
+		@include breakpoint(max-xxl) {
+			padding: 40px 30px;
+		}
+		@include breakpoint(max-xl) {
+			padding: 30px 15px;
+		}
+	}
+}
+.single-slide:nth-of-type(3n + 1) {
+	.feature-item {
+		&__thumb {
+			background-color: var(--theme-one);
+		}
+	}
+}
+.single-slide:nth-of-type(3n + 2) {
+	.feature-item {
+		&__thumb {
+			background-color: var(--theme-two);
+		}
+	}
+}
+.single-slide:nth-of-type(3n + 3) {
+	.feature-item {
+		&__thumb {
+			background-color: hsl(var(--base));
+		}
+	}
+}
+// Feature Section Ends Here
+
+// Agenda Section Starts Here
+.agenda-section {
+	.bg-shape {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0;
+		img {
+			object-fit: cover;
+			height: 100vh;
+		}
+	}
+	.container {
+		position: relative;
+		z-index: 1;
+	}
+}
+.agenda-wrapper {
+	@extend %flex;
+	justify-content: center;
+	gap: 30px;
+	@include breakpoint(max-sm) {
+		gap: 25px;
+	}
+}
+.agenda-item {
+	width: calc((100% / 5) - ((30px * 4) / 5));
+	aspect-ratio: 1;
+	background-color: hsl(var(--base));
+	@extend %flex-center;
+	text-align: center;
+	border-radius: 80px;
+	padding: 20px;
+	@include breakpoint(max-xxl) {
+		width: calc((100% / 4) - ((30px * 3) / 4));
+	}
+	@include breakpoint(max-lg) {
+		width: calc((100% / 3) - ((30px * 2) / 3));
+	}
+	@include breakpoint(max-sm) {
+		width: calc((100% / 2) - ((25px * 1) / 2));
+	}
+	.title {
+		color: hsl(var(--white));
+	}
+
+	&:nth-child(1) {
+		background-color: var(--theme-two);
+	}
+	&:nth-child(2) {
+		background-color: var(--theme-one);
+	}
+	&:nth-child(4) {
+		background-color: var(--theme-one);
+	}
+	&:nth-child(5) {
+		background-color: var(--theme-two);
+	}
+}
+.text-justify {
+	text-align: justify;
+}
+// Agenda Section Ends Here
+
+// Speakers Section Starts Here
+.speaker-item {
+	background-color: hsl(var(--light-500));
+	border-radius: 80px;
+	@include breakpoint(max-xxl) {
+		border-radius: 70px;
+	}
+	@include breakpoint(max-xl) {
+		border-radius: 50px;
+	}
+	&__thumb {
+		width: 100%;
+		aspect-ratio: 1;
+		background-color: var(--theme-one);
+		@extend %flex-center;
+		border-radius: 80px;
+        overflow: hidden;
+		@include breakpoint(max-xxl) {
+			border-radius: 70px;
+		}
+		@include breakpoint(max-xl) {
+			border-radius: 50px;
+		}
+		img {
+			width: 100%;
+            height: 100%;
+            object-fit: cover;
+		}
+	}
+	&__content {
+		padding: 50px 40px;
+		@include breakpoint(max-xxl) {
+			padding: 40px 30px;
+		}
+		@include breakpoint(max-xl) {
+			padding: 30px 15px;
+		}
+	}
+}
+.single-slide:nth-of-type(3n + 1) {
+	.speaker-item {
+		&__thumb {
+			background-color: var(--theme-one);
+		}
+	}
+}
+.single-slide:nth-of-type(3n + 2) {
+	.speaker-item {
+		&__thumb {
+			background-color: var(--theme-two);
+		}
+	}
+}
+.single-slide:nth-of-type(3n + 3) {
+	.speaker-item {
+		&__thumb {
+			background-color: hsl(var(--base));
+		}
+	}
+}
+
+div[class*="col"] {
+	&:nth-of-type(4n + 1) {
+		.speaker-item {
+			&__thumb {
+				background-color: hsl(var(--base));
+			}
+		}
+	}
+	&:nth-of-type(4n + 2) {
+		.speaker-item {
+			&__thumb {
+                background-color: var(--theme-one);
+            }
+		}
+	}
+	&:nth-of-type(4n + 3) {
+        .speaker-item {
+            &__thumb {
+                background-color: var(--theme-two);
+			}
+		}
+	}
+	&:nth-of-type(4n + 4) {
+		.speaker-item {
+			&__thumb {
+				background-color: hsl(var(--secondary));
+			}
+		}
+	}
+}
+// Speakers Section Ends Here

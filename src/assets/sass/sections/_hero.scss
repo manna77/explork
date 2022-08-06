@@ -1,8 +1,16 @@
 .banner-section {
-    padding-top: 190px;
-    padding-bottom: 160px;
+    padding: 200px 0;
+    @include breakpoint(max-lg) {
+        padding: 140px 0;
+    }
+    @include breakpoint(max-md) {
+        padding: 120px 0;
+    }
 }
 .banner-content {
+    &__text1 {
+        font-weight: 600;
+    }
     &__text2 {
         font-weight: 600;
     }

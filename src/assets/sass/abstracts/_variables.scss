@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
 	// Fonts
@@ -55,14 +55,18 @@
 	--light-h: 148;
 	--light-s: 0%;
 	--light-l: 95%;
+	--light: var(--light-h) var(--light-s) var(--light-l);
 	--light-50: var(--light-h) var(--light-s) calc(var(--light-l) + 33%);
 	--light-100: var(--light-h) var(--light-s) calc(var(--light-l) + 20%);
 	--light-200: var(--light-h) var(--light-s) calc(var(--light-l) + 15%);
 	--light-300: var(--light-h) var(--light-s) calc(var(--light-l) + 10%);
 	--light-400: var(--light-h) var(--light-s) calc(var(--light-l) + 2%);
-	--light: var(--light-h) var(--light-s) var(--light-l);
-	--light-600: var(--light-h) var(--light-s) calc(var(--light-l) - 2%);
+	--light-500: var(--light-h) var(--light-s) calc(var(--light-l) - 2%);
+	--light-600: var(--light-h) var(--light-s) calc(var(--light-l) - 3%);
 	--light-700: var(--light-h) var(--light-s) calc(var(--light-l) - 10%);
 	--light-800: var(--light-h) var(--light-s) calc(var(--light-l) - 15%);
 	--light-900: var(--light-h) var(--light-s) calc(var(--light-l) - 20%);
+
+	--theme-one: hsla(210, 51%, 52%, 1);
+	--theme-two: hsla(210, 74%, 68%, 1);
 }

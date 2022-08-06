@@ -12,7 +12,10 @@
 	padding-top: clamp(35px, 6vw, 60px);
 }
 .pt-50 {
-	padding-top: clamp(35px, 6vw, 50px);
+	padding-top: clamp(35px, 4vw, 50px);
+}
+.pt-40 {
+	padding-top: clamp(20px, 4vw, 40px);
 }
 
 // Padding Bottom
@@ -29,7 +32,10 @@
 	padding-bottom: clamp(35px, 6vw, 60px);
 }
 .pb-50 {
-	padding-bottom: clamp(35px, 6vw, 50px);
+	padding-bottom: clamp(35px, 4vw, 50px);
+}
+.pb-40 {
+	padding-bottom: clamp(20px, 4vw, 40px);
 }
 
 
