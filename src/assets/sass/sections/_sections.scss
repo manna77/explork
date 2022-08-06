@@ -118,7 +118,7 @@
 		img {
 			object-fit: cover;
 			height: 100vh;
-            max-width: 100%;
+			max-width: 100%;
 		}
 	}
 	.container {
@@ -189,7 +189,7 @@
 		background-color: var(--theme-one);
 		@extend %flex-center;
 		border-radius: 80px;
-        overflow: hidden;
+		overflow: hidden;
 		@include breakpoint(max-xxl) {
 			border-radius: 70px;
 		}
@@ -198,8 +198,8 @@
 		}
 		img {
 			width: 100%;
-            height: 100%;
-            object-fit: cover;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 	&__content {
@@ -210,11 +210,11 @@
 		@include breakpoint(max-xl) {
 			padding: 30px 15px;
 		}
-        .title {
-            @include breakpoint(max-xxl) {
-                font-size: 16px;
-            }
-        }
+		.title {
+			@include breakpoint(max-xxl) {
+				font-size: 16px;
+			}
+		}
 	}
 }
 .single-slide:nth-of-type(3n + 1) {
@@ -250,14 +250,14 @@ div[class*="col"] {
 	&:nth-of-type(4n + 2) {
 		.speaker-item {
 			&__thumb {
-                background-color: var(--theme-one);
-            }
+				background-color: var(--theme-one);
+			}
 		}
 	}
 	&:nth-of-type(4n + 3) {
-        .speaker-item {
-            &__thumb {
-                background-color: var(--theme-two);
+		.speaker-item {
+			&__thumb {
+				background-color: var(--theme-two);
 			}
 		}
 	}
@@ -270,3 +270,12 @@ div[class*="col"] {
 	}
 }
 // Speakers Section Ends Here
+
+// Pricing Section Starts Here
+.pricing-section {
+	background-color: hsl(var(--base) / 0.7);
+}
+.pricing-item {
+	padding: 40px;
+}
+// Pricing Section Ends Here

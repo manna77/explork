@@ -2211,4 +2211,12 @@ div[class*=col]:nth-of-type(4n + 3) .speaker-item__thumb {
 div[class*=col]:nth-of-type(4n + 4) .speaker-item__thumb {
     background-color: hsl(var(--secondary));
 }
+
+.pricing-section {
+    background-color: hsl(var(--base)/0.7);
+}
+
+.pricing-item {
+    padding: 40px;
+}
 /*# sourceMappingURL=main.css.map */
