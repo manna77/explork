@@ -1,0 +1,25 @@
+.footer-section {
+	background-color: hsl(var(--light-800));
+}
+.footer-content .logo img {
+    max-width: 220px;
+    max-height: 80px;
+}
+.footer-content .social-links {
+    li a {
+        font-size: 26px;
+        width: auto;
+        height: auto;
+    }
+}
+.email-form {
+	.form--control {
+		border-radius: 35px 0 0 35px;
+	}
+}
+.footer-links {
+	gap: 10px 45px;
+}
+.copyright-text {
+    border-top: 3px solid hsl(var(--dark));
+}

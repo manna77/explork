@@ -26,32 +26,38 @@
     <!-- Overlay -->
     <div class="overlay"></div>
     <a href="javascript::void(0)" class="scrollToTop"><i class="las la-chevron-up"></i></a>
-<div class="header">
+<div class="header-top py-3">
     <div class="container">
-        <div class="header-bottom">
-            <div class="header-bottom-area align-items-center">
-                <div class="logo"><a href="index.html"><img src="./assets/images/logo.png" alt="logo"></a></div>
-                <ul class="menu">
-                    <li>
-                        <a href="#project">Start a Project</a>
-                    </li>
-                    <li>
-                        <a href="#find-project">Find a Project</a>
-                    </li>
-                    <li>
-                        <a href="#how-it-works">How it works</a>
-                    </li>
-                    <li>
-                        <a href="#book-now">Book Now</a>
-                    </li>
-                    <li>
-                        <a href="#faq">FAQ</a>
-                    </li>
-                </ul>
-                <div class="header-trigger-wrapper d-flex d-lg-none align-items-center">
-                    <div class="header-trigger">
-                        <span></span>
-                    </div>
+        <div class="d-flex flex-wrap align-items-center gap-4 justify-content-end">
+            <a href="" class="text-white">login </a>
+            <a href="" class="btn btn--outline-light py-1 px-sm-5 px-4">Register</a>
+        </div>
+    </div>
+</div>
+<div class="header-bottom">
+    <div class="container">
+        <div class="header-bottom-area align-items-center">
+            <div class="logo"><a href="index.html"><img src="./assets/images/logo.png" alt="logo"></a></div>
+            <ul class="menu">
+                <li>
+                    <a href="#project">Start a Project</a>
+                </li>
+                <li>
+                    <a href="#find-project">Find a Project</a>
+                </li>
+                <li>
+                    <a href="#how-it-works">How it works</a>
+                </li>
+                <li>
+                    <a href="#book-now">Book Now</a>
+                </li>
+                <li>
+                    <a href="#faq">FAQ</a>
+                </li>
+            </ul>
+            <div class="header-trigger-wrapper d-flex d-lg-none align-items-center">
+                <div class="header-trigger">
+                    <span></span>
                 </div>
             </div>
         </div>
@@ -72,9 +78,9 @@
 <!-- Book Section Starts Here -->
 <div class="book-section bg--section pb-120">
     <div class="container">
-        <div class="row gy-4 gy-md-5 justify-content-center align-items-center">
-            <div class="col-lg-6 align-self-end pt-50">
-                <div class="book-content">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 align-self-end">
+                <div class="book-content pt-50 pb-50 pb-lg-0">
                     <p class="pb-3 pb-sm-4">A premium business event hosted in the Caribbean designed to offer community to kickstart projects. With our team
                         building platform, creatives post
                         projects, experts review projects and build teams together. Travel, work and collaborate on your projects with your teams at
@@ -94,13 +100,23 @@
 <!-- Book Section Ends Here -->
 
 <!-- Feature Section Starts Here -->
-<div class="feature-section pt-120 pb-60">
+<div class="feature-section pt-120 pb-60 overflow-hidden">
     <div class="container">
         <div class="section-header">
             <h2 class="feature-t__title pb-2 pb-sm-3">IMAGINE, CREATE, EXPLORE ART WHILE TRAVELLING AROUND THE CARIBBEAN</h2>
             <h3 class="section-header__subtitle text--base">Featured Projects</h3>
         </div>
         <div class="feature-slider">
+            <div class="single-slide">
+                <div class="feature-item">
+                    <div class="feature-item__thumb">
+                        <img src="assets/images/icon/feature1.png" alt="icon">
+                    </div>
+                    <div class="feature-item__content">
+                        <h4 class="title">Humming Bird Cultural Dance Studio</h4>
+                    </div>
+                </div>
+            </div>
             <div class="single-slide">
                 <div class="feature-item">
                     <div class="feature-item__thumb">
@@ -148,7 +164,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="section-content">
-                    <h4 class="title pb-40">Creatives, Designers, Individuals, Artisans, Makers, Groups Organizations ‘Start A Project’ And Share The Project You Are Working On And The Associated Problems You Will Like To Solve.</h4>
+                    <h4 class="title pb-40 text--accent">Creatives, Designers, Individuals, Artisans, Makers, Groups Organizations ‘Start A Project’ And Share The Project You Are Working On And The Associated Problems You Will Like To Solve.</h4>
                     <p>Build your team to travel, innovate and work on your projects at Explork Innovation Retreat and Adventure Tours with experts from across the globe seeking projects like yours to support, and volunteer their skills to while enjoying a unique travel experience. Already have your team in place, get them together for an epic adventure of travel and innovation.</p>
                     <div class="d-flex flex-wrap gap-3 gap-xl-4 pt-40">
                         <a href="" class="cmn--btn">Start a Project</a>
@@ -391,25 +407,136 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row gy-4">
             <div class="col-12">
                 <div class="pricing-item">
-                    <h5 class="pricing-item__title">Early Bird $2500
-                        1. All Projects
-                        April 1--> Aug 1</h5>
-                    <ul class="pricing-item__info">
-                        <li>1. All Projects</li>
-                    </ul>
+                    <div class="pricing-item__content">
+                        <h4 class="pricing-item__content-title">Early Bird $2500</h4>
+                        <ul class="pricing-item__content-info my-1 my-lg-2">
+                            <li>1. All Projects</li>
+                        </ul>
+                        <h4 class="pricing-item__content-duration">April 1--> Aug 1</h4>
+                    </div>
+                    <div class="pricing-item__icon">
+                        <i class="las la-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="pricing-item">
+                    <div class="pricing-item__content">
+                        <h4 class="pricing-item__content-title">Regular $3000</h4>
+                        <ul class="pricing-item__content-info my-1 my-lg-2">
+                            <li>1. All Projects</li>
+                        </ul>
+                        <h4 class="pricing-item__content-duration">April 1--> Aug 1</h4>
+                    </div>
+                    <div class="pricing-item__icon">
+                        <i class="las la-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="pricing-item">
+                    <div class="pricing-item__content">
+                        <h4 class="pricing-item__content-title">Experience $2000</h4>
+                        <ul class="pricing-item__content-info my-1 my-lg-2">
+                            <li>1. All Projects</li>
+                        </ul>
+                        <h4 class="pricing-item__content-duration">April 1--> Aug 1</h4>
+                    </div>
+                    <div class="pricing-item__icon">
+                        <i class="las la-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="pricing-item">
+                    <div class="pricing-item__content">
+                        <h4 class="pricing-item__content-title">Regular $3000</h4>
+                        <ul class="pricing-item__content-info my-1 my-lg-2">
+                            <li>1. All Projects</li>
+                        </ul>
+                        <h4 class="pricing-item__content-duration">April 1--> Aug 1</h4>
+                    </div>
+                    <div class="pricing-item__icon">
+                        <i class="las la-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="pricing-item">
+                    <div class="pricing-item__content">
+                        <h4 class="pricing-item__content-title">Experience $2000</h4>
+                        <ul class="pricing-item__content-info my-1 my-lg-2">
+                            <li>1. All Projects</li>
+                        </ul>
+                        <h4 class="pricing-item__content-duration">April 1--> Aug 1</h4>
+                    </div>
+                    <div class="pricing-item__icon">
+                        <i class="las la-angle-down"></i>
+                    </div>
                 </div>
             </div>
         </div>
+        <ul class="ps-4 pt-50 d-flex flex-column gap-2 text-white" style="list-style: disc;">
+            <li>are responsible for own airfare.</li>
+            <li>should I book my flight? Plan to arrive Day 1 before 2:p.m. and to depart Day 5 at anytime</li>
+            <li>wait to book your flight until you receive an email from us with more details. You will be sent complete itinerary of trip upon booking)</li>
+        </ul>
     </div>
 </div>
 <!-- Pricing Section Ends Here -->
 
 
+<!-- Tips Section Starts Here -->
+<div class="pt-100 pb-100">
+    <div class="container">
+        <div class="section-header text-center mb-0 pb-40">
+            <h2 class="section-header__title">Tips on Ticket Purchase</h2>
+        </div>
+        <ul class="d-flex flex-column gap-2 ps-4" style="list-style: decimal;">
+            <li>All projects will be saved to project listings on ‘Find a Project’ page . Post projects and purchase tickets at your convenience.</li>
+            <li>Project owners seeking experts will have to purchase tickets before experts are able to buy ticket for retreat associated with project.</li>
+            <li>Project owners with existing team once project is posted both project owners and team members are able to purchase at their convenience.</li>
+            <li>Individuals attached to no projects go to list of bookable projects on ‘Book Now” page and select ‘attached to no projects’ then purchase tickets</li>
+        </ul>
+    </div>
+</div>
+<!-- Tips Section Ends Here -->
 
 
+<footer class="footer-section pt-80 pb-80">
+    <div class="container">
+        <div class="footer-content text-center">
+            <a href="index.html" class="logo mb-4 mb-sm-5"><img src="assets/images/logo2.png" alt="logo"></a>
+            <ul class="social-links justify-content-center mb-4 fs--24px gap-4">
+                <li><a href=""><i class="lab la-facebook-square"></i></a></li>
+                <li><a href=""><i class="lab la-twitter-square"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 col-xl-4">
+                    <form action="" class="email-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control form--control " placeholder="Email : ">
+                            <button class="btn btn--md btn--base">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <ul class="footer-links d-flex flex-wrap justify-content-center my-4 my-sm-5">
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Cookie Policy</a></li>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </div>
+
+        <p class="pt-3 pt-sm-4 text-center copyright-text">Copyright © 2022 Crypto Club. All rights reserved.</p>
+    </div>
+</footer>
 <!-- jQuery library -->
 <script src="assets/js/lib/jquery-3.6.0.min.js"></script>
 

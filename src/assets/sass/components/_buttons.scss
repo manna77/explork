@@ -53,7 +53,7 @@
 }
 
 $colors: "primary" hsl(var(--primary)), "secondary" hsl(var(--secondary)), "success" hsl(var(--success)), "danger" hsl(var(--danger)), "warning" hsl(var(--warning)), "info" var(--info), "light" hsl(var(--light)), "dark" hsl(var(--dark)),
-	"base" hsl(var(--base));
+	"base" hsl(var(--base)), "white" hsl(var(--white));
 
 @each $name, $color in $colors {
 	.btn--#{$name} {
@@ -82,6 +82,10 @@ $colors: "primary" hsl(var(--primary)), "secondary" hsl(var(--secondary)), "succ
 	}
 }
 .btn--outline-light {
-	color: hsl(var(--body));
-	border: 2px solid hsl(var(--border));
+	color: hsl(var(--white));
+	border: 1px solid hsl(var(--border));
+	&:hover {
+		background-color: hsl(var(--white));
+		color: hsl(var(--body));
+	}
 }

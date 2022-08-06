@@ -48,7 +48,7 @@ $(".menu li a").on("click", function (e) {
 });
 
 // Sticky Menu
-var header = document.querySelector(".header");
+var header = document.querySelector(".header-bottom");
 if (header) {
 	window.addEventListener("scroll", function () {
 		header.classList.toggle("sticky", window.scrollY > 0);
@@ -85,9 +85,9 @@ $(".feature-slider").slick({
 	pauseOnHover: true,
 	centerMode: false,
 	dots: false,
-	arrows: false,
-	nextArrow: '<i class="las la-arrow-right arrow-right"></i>',
-	prevArrow: '<i class="las la-arrow-left arrow-left"></i> ',
+	arrows: true,
+	nextArrow: '<i class="fas fa-angle-right slick-arrow arrow-right"></i>',
+	prevArrow: '<i class="fas fa-angle-left slick-arrow arrow-left"></i> ',
 	responsive: [
 		{
 			breakpoint: 1199,

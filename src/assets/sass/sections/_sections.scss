@@ -46,6 +46,26 @@
 			padding-inline: 0px;
 		}
 	}
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 60px;
+		height: 60px;
+		color: hsl(var(--white));
+		background-color: hsl(var(--light-800));
+		@extend %flex-center;
+		z-index: 1;
+		border-radius: 50%;
+		font-size: 22px;
+		&.arrow-left {
+			left: -60px;
+		}
+		&.arrow-right {
+			left: auto;
+			right: -60px;
+		}
+	}
 }
 .feature-item {
 	background-color: hsl(var(--light-500));
@@ -112,13 +132,14 @@
 	.bg-shape {
 		position: absolute;
 		top: 0;
+		width: 100%;
 		left: 50%;
 		transform: translateX(-50%);
 		bottom: 0;
 		img {
 			object-fit: cover;
 			height: 100vh;
-			max-width: 100%;
+			width: 100%;
 		}
 	}
 	.container {
@@ -273,9 +294,28 @@ div[class*="col"] {
 
 // Pricing Section Starts Here
 .pricing-section {
-	background-color: hsl(var(--base) / 0.7);
+	background-color: hsl(var(--base) / 0.8);
 }
 .pricing-item {
 	padding: 40px;
+	border-radius: 80px;
+	background-color: hsl(var(--white));
+	border: 6px solid hsl(var(--base-600));
+	@extend %flex;
+	align-items: center;
+	justify-content: space-between;
+	@include breakpoint(xl) {
+		padding: 50px 65px;
+	}
+	&__icon {
+		font-size: 38px;
+		color: hsl(var(--base));
+		@include breakpoint(max-md) {
+			font-size: 32px;
+		}
+		@include breakpoint(max-sm) {
+			font-size: 28px;
+		}
+	}
 }
 // Pricing Section Ends Here
