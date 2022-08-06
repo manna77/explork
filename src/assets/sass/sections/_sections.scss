@@ -118,6 +118,7 @@
 		img {
 			object-fit: cover;
 			height: 100vh;
+            max-width: 100%;
 		}
 	}
 	.container {
@@ -204,11 +205,16 @@
 	&__content {
 		padding: 50px 40px;
 		@include breakpoint(max-xxl) {
-			padding: 40px 30px;
+			padding: 40px 20px;
 		}
 		@include breakpoint(max-xl) {
 			padding: 30px 15px;
 		}
+        .title {
+            @include breakpoint(max-xxl) {
+                font-size: 16px;
+            }
+        }
 	}
 }
 .single-slide:nth-of-type(3n + 1) {

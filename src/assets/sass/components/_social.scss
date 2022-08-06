@@ -7,6 +7,11 @@
 			height: 40px;
 			border-radius: 50%;
 			@extend %flex-center;
+            @include breakpoint(max-xxl) {
+                width: 35px;
+                height: 35px;
+                font-size: 15px;
+            }
 		}
 	}
 	&.social--base {
