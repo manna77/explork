@@ -22,6 +22,9 @@
 		}
 	}
 }
+.word-space {
+	word-spacing: 6px;
+}
 // Section Header Ends Here
 
 // Book Section Starts Here
@@ -162,7 +165,7 @@
 	@extend %flex-center;
 	text-align: center;
 	border-radius: 80px;
-	padding: 20px;
+	padding: 20px 15px;
 	@include breakpoint(max-xxl) {
 		width: calc((100% / 4) - ((30px * 3) / 4));
 	}
@@ -174,6 +177,7 @@
 	}
 	.title {
 		color: hsl(var(--white));
+		font-size: 18px;
 	}
 
 	&:nth-child(1) {

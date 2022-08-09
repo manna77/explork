@@ -2006,6 +2006,10 @@ input:-webkit-autofill:focus {
     }
 }
 
+.word-space {
+    word-spacing: 6px;
+}
+
 @media (min-width: 992px) {
     .book-thumb {
         margin-top: -150px;
@@ -2163,7 +2167,7 @@ input:-webkit-autofill:focus {
     background-color: hsl(var(--base));
     text-align: center;
     border-radius: 80px;
-    padding: 20px;
+    padding: 20px 15px;
 }
 
 @media (max-width: 1399px) {
@@ -2186,6 +2190,7 @@ input:-webkit-autofill:focus {
 
 .agenda-item .title {
     color: hsl(var(--white));
+    font-size: 18px;
 }
 
 .agenda-item:nth-child(1) {
